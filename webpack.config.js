@@ -19,6 +19,15 @@ module.exports={
     module:{},
     //插件，可以有多个插件
     plugins:[],
-    //webpack开发服务
-    devServer:{}
+    //webpack服务
+    devServer:{
+        //指定需要更新的目录
+        contentBase:path.resolve(__dirname,'dist'),
+        //服务器地址
+        host:'192.168.1.100',
+        //服务器压缩
+        compress:true,
+        //端口，默认为80
+        port:80
+    }
 }
